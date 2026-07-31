@@ -72,25 +72,38 @@ Status
 
 ---
 
-## Phase 3 – Custom Agent Development
+## Phase 3 – Custom Agent Development 🚧
 
-Planned
+### Completed
 
-- Study AVAILABLE_AGENTS registration
-- Build MyFirstAgent
-- Register custom agent
-- Run on AR25
-- Build debugging tools
-- Implement heuristic agent
-- Implement memory-based agent
-- Design reasoning architecture
+- ✅ Studied `AVAILABLE_AGENTS` registration
+- ✅ Analyzed the official `Random` agent
+- ✅ Designed the custom project architecture
+- ✅ Implemented `BasePolicy`
+- ✅ Implemented `RandomPolicy`
+- ✅ Built `MyFirstAgent` (Framework Adapter)
+
+### In Progress
+
+- ⏳ Framework integration
+- ⏳ Register `MyFirstAgent` with the official framework
+- ⏳ Execute `MyFirstAgent` on AR25
+- ⏳ Build debugging and logging tools
+
+### Planned
+
+- HeuristicPolicy
+- MemoryPolicy
+- PlanningPolicy
+- CompetitionPolicy
+- Multi-game evaluation
+- Competition baseline
 
 Status
 
-**NOT STARTED**
+**IN PROGRESS**
 
 ---
-
 ## Phase 4 – Intelligent ARC Solver
 
 Planned
@@ -129,11 +142,11 @@ Status
 
 | Phase | Status |
 |--------|--------|
-| Phase 1 | ✅ Complete |
-| Phase 2 | ✅ Complete |
-| Phase 3 | ⏳ Not Started |
-| Phase 4 | ⏳ Not Started |
-| Phase 5 | ⏳ Not Started |
+| Phase 1 – Competition & Environment Analysis | ✅ Complete |
+| Phase 2 – Framework Reverse Engineering | ✅ Complete |
+| Phase 3 – Custom Agent Development | 🚧 In Progress |
+| Phase 4 – Intelligent ARC Solver | ⏳ Not Started |
+| Phase 5 – Competition Optimization | ⏳ Not Started |
 
 ---
 
