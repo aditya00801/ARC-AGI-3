@@ -81,29 +81,38 @@ Status
 - ✅ Designed the custom project architecture
 - ✅ Implemented `BasePolicy`
 - ✅ Implemented `RandomPolicy`
-- ✅ Built `MyFirstAgent` (Framework Adapter)
+- ✅ Built `MyFirstAgent`
+- ✅ Registered `MyFirstAgent`
+- ✅ Built the `LocalRunner`
+- ✅ Initialized the ARC engine in offline mode
+- ✅ Discovered local environments
+- ✅ Loaded local environments
+- ✅ Inspected environment metadata
+- ✅ Inspected action space
+- ✅ Inspected observations
+- ✅ Inspected frame structure
+- ✅ Executed the first environment interaction
 
 ### In Progress
 
-- ⏳ Framework integration
-- ⏳ Register `MyFirstAgent` with the official framework
-- ⏳ Execute `MyFirstAgent` on AR25
-- ⏳ Build debugging and logging tools
+- ⏳ Integrate `MyFirstAgent` into `LocalRunner`
+- ⏳ Build the episode execution loop
 
 ### Planned
 
+- Logging & debugging framework
 - HeuristicPolicy
 - MemoryPolicy
 - PlanningPolicy
-- CompetitionPolicy
+- ReasoningPolicy
 - Multi-game evaluation
 - Competition baseline
 
-Status
+---
+
+### Status
 
 **IN PROGRESS**
-
----
 ## Phase 4 – Intelligent ARC Solver
 
 Planned
