@@ -9,14 +9,13 @@ from src.policies.random_policy import RandomPolicy
 
 class MyFirstAgent(Agent):
     """
-    Thin adapter between the ARC framework and our policy syatem.
+    Thin adapter between the ARC framework and our policy system.
     """
 
     MAX_ACTIONS = 80 
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
-        super().__init__(*args,**kwargs)
-
+        super().__init__(*args, **kwargs)
         # Attach the decision policy
         self.policy = RandomPolicy()
 
@@ -31,7 +30,7 @@ class MyFirstAgent(Agent):
     ) -> bool:
         return latest_frame.state is GameState.WIN
 
-    def chooes_action(
+    def choose_action(
             self,
             frames: list[FrameData],
             latest_frame : FrameData,
