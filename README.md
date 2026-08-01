@@ -2,31 +2,33 @@
 
 An object-centric AI agent for the **ARC Prize 2026 (ARC-AGI-3)** competition.
 
-This project focuses on building an intelligent ARC solver capable of understanding and solving Abstract Reasoning Corpus (ARC) tasks through modular perception, world modeling, and reasoning.
+This project focuses on building an intelligent ARC solver capable of understanding and solving **Abstraction and Reasoning Corpus (ARC)** tasks through modular perception, semantic reasoning, and transformation learning.
 
 ---
 
 # Project Objectives
 
-- Study and understand the official ARC-AGI-3 framework.
-- Develop a modular custom agent architecture.
-- Build an object-centric perception system.
-- Construct a semantic World Model.
-- Implement an intelligent reasoning engine.
-- Optimize the agent for the ARC Prize 2026 competition.
+* Study and understand the official ARC-AGI-3 framework.
+* Develop a modular custom agent architecture.
+* Build an object-centric perception system.
+* Construct a semantic World Model.
+* Implement an intelligent reasoning engine.
+* Develop a transformation engine capable of solving unseen ARC tasks.
+* Optimize the agent for the ARC Prize 2026 competition.
 
 ---
 
 # Current Status
 
-| Phase | Status |
-|--------|--------|
+| Phase                                        | Status     |
+| -------------------------------------------- | ---------- |
 | Phase 1 – Competition & Environment Analysis | ✅ Complete |
-| Phase 2 – Framework Reverse Engineering | ✅ Complete |
-| Phase 3 – Custom Agent Development | ✅ Complete |
-| Phase 4 – Perception System | ✅ Complete |
-| Phase 5 – Reasoning Engine | 🚧 In Progress |
-| Phase 6 – Competition Optimization | ⏳ Planned |
+| Phase 2 – Framework Reverse Engineering      | ✅ Complete |
+| Phase 3 – Custom Agent Development           | ✅ Complete |
+| Phase 4 – Perception System                  | ✅ Complete |
+| Phase 5 – Reasoning Engine                   | ✅ Complete |
+| Phase 6 – Transformation Engine              | 🚧 Planned |
+| Phase 7 – Competition Optimization           | ⏳ Planned  |
 
 ---
 
@@ -51,16 +53,29 @@ ConnectedComponentExtractor
 WorldBuilder
        │
        ▼
-WorldModel
+ARCObject
+       │
+ ┌─────┴─────────────┐
+ ▼                   ▼
+ShapeRecognizer  SpatialReasoner
        │
        ▼
-Reasoning Engine
+PatternDetector
        │
        ▼
-Policy
+ObjectComparator
        │
        ▼
-Action
+RuleInference
+       │
+       ▼
+DecisionEngine
+       │
+       ▼
+ARCSolver
+       │
+       ▼
+Transformation Engine (Phase 6)
 ```
 
 ---
@@ -71,20 +86,21 @@ Action
 ARC-AGI-3/
 │
 ├── framework/
-│   └── ARC-AGI-3-Agents/      # Official ARC-AGI-3 Framework
+│   └── ARC-AGI-3-Agents/        # Official ARC-AGI-3 Framework
 │
-├── docs/                      # Technical Documentation
-├── experiments/               # Experiments and Testing
-├── models/                    # Saved Models
-├── notebooks/                 # Research Notebooks
-├── outputs/                   # Generated Outputs
+├── docs/                        # Technical Documentation
+├── experiments/                 # Experiments and Testing
+├── models/                      # Saved Models
+├── notebooks/                   # Research Notebooks
+├── outputs/                     # Generated Outputs
 │
 ├── src/
 │   ├── agents/
 │   ├── core/
 │   ├── perception/
+│   ├── reasoning/
 │   ├── policies/
-│   └── ...
+│   └── utils/
 │
 ├── tests/
 ├── requirements.txt
@@ -98,103 +114,195 @@ ARC-AGI-3/
 
 ## Agent Framework
 
-- Custom Agent Architecture
-- BasePolicy
-- RandomPolicy
-- MyFirstAgent
-- LocalRunner
+* Custom Agent Architecture
+* BasePolicy
+* RandomPolicy
+* MyFirstAgent
+* LocalRunner
 
 ---
 
 ## Perception System
 
-- GridParser
-- ColorAnalyzer
-- ConnectedComponentExtractor
-- WorldBuilder
-- WorldModel
-- Object
+* GridParser
+* ColorAnalyzer
+* ConnectedComponentExtractor
+* WorldBuilder
+* WorldModel
+* ARCObject
 
 ---
 
-## Documentation
+## Reasoning Engine
 
-Complete documentation for:
+### Object Representation
 
-- Phase 1 – Competition & Environment Analysis
-- Phase 2 – Framework Reverse Engineering
-- Phase 3 – Custom Agent Development
-- Phase 4 – Perception System
+* ARCObject
+
+### Shape Analysis
+
+* ShapeRecognizer
+
+### Spatial Analysis
+
+* SpatialReasoner
+
+### Pattern Analysis
+
+* PatternDetector
+
+### Object Comparison
+
+* ObjectComparator
+
+### Rule Representation
+
+* Rule
+
+### Rule Learning
+
+* RuleInference
+
+### Decision Making
+
+* DecisionEngine
+
+### Solver Pipeline
+
+* ARCSolver
 
 ---
 
 # Documentation
 
-The project contains comprehensive technical documentation located in the **docs/** directory.
+The project contains comprehensive technical documentation in the **docs/** directory.
 
 Documentation includes:
 
-- Competition Analysis
-- Framework Architecture
-- ARC Engine
-- Agent API
-- Policy System
-- Agent Development
-- Grid Parser
-- Color Analysis
-- Connected Component Analysis
-- World Builder
-- World Model
-- Object Model
-- Perception Pipeline
+* Competition Analysis
+* Framework Architecture
+* Agent API
+* Policy System
+* Agent Development
+* Perception Pipeline
+* World Model
+* Object Model
+* Reasoning Engine
+* Shape Recognition
+* Spatial Reasoning
+* Pattern Detection
+* Rule Inference
+* Decision Engine
+* ARC Solver
 
-A total of **25 technical documents** currently describe the complete development process through Phase 4.
-
----
-
-# Roadmap
-
-## Phase 5 – Reasoning Engine
-
-Planned features:
-
-- Object Property Extraction
-- Spatial Relationship Analysis
-- Shape Recognition
-- Pattern Detection
-- Rule Inference
-- Intelligent Decision Making
-- ARC Task Solving
+Documentation currently covers **Phases 1–5**.
 
 ---
 
-## Phase 6 – Competition Optimization
+# Development Roadmap
+
+## ✅ Phase 1 – Competition & Environment Analysis
+
+Completed.
+
+---
+
+## ✅ Phase 2 – Framework Reverse Engineering
+
+Completed.
+
+---
+
+## ✅ Phase 3 – Custom Agent Development
+
+Completed.
+
+---
+
+## ✅ Phase 4 – Perception System
+
+Completed.
+
+Implemented:
+
+* Grid Parser
+* Color Analyzer
+* Connected Component Extractor
+* World Builder
+* World Model
+
+---
+
+## ✅ Phase 5 – Reasoning Engine
+
+Completed.
+
+Implemented:
+
+* ARCObject
+* ShapeRecognizer
+* SpatialReasoner
+* PatternDetector
+* ObjectComparator
+* Rule
+* RuleInference
+* DecisionEngine
+* ARCSolver
+
+---
+
+## 🚧 Phase 6 – Transformation Engine
+
+Planned modules:
+
+* RuleExecutor
+* TranslationTransformer
+* RotationTransformer
+* ReflectionTransformer
+* ColorTransformer
+* ScalingTransformer
+* GridBuilder
+* PredictionEngine
+
+---
+
+## ⏳ Phase 7 – Competition Optimization
 
 Planned features:
 
-- Multi-task Evaluation
-- Performance Optimization
-- Benchmarking
-- Submission Pipeline
-- Competition Testing
+* Multi-task Evaluation
+* Object Matching
+* Performance Optimization
+* Benchmarking
+* Submission Pipeline
+* Competition Testing
 
 ---
 
 # Current Focus
 
-Development is now focused on **Phase 5 – Reasoning Engine**.
+Development is now focused on **Phase 6 – Transformation Engine**.
 
-The next milestone is to transform the structured **WorldModel** produced by the perception system into an intelligent reasoning system capable of discovering transformation rules and solving unseen ARC tasks.
+The next milestone is to execute the transformation rules inferred by the Reasoning Engine and generate predicted output grids for unseen ARC tasks.
 
 ---
 
 # Technologies
 
-- Python 3
-- Object-Oriented Programming
-- ARC-AGI-3 Framework
-- Git
-- GitHub
+* Python 3
+* Object-Oriented Programming (OOP)
+* Dataclasses
+* ARC-AGI-3 Framework
+* Git
+* GitHub
+
+---
+
+# Version
+
+**Current Version:** `v0.5.0`
+
+**Status:** Phase 5 (Reasoning Engine) Complete
 
 ---
 
